@@ -21,6 +21,10 @@
 		F9366ADE285A6301004C972B /* LGSideMenuController in Frameworks */ = {isa = PBXBuildFile; productRef = F9366ADD285A6301004C972B /* LGSideMenuController */; };
 		F9366AE1285A633B004C972B /* AnyDate in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AE0285A633B004C972B /* AnyDate */; };
 		F9366AE4285A6359004C972B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AE3285A6359004C972B /* DeviceKit */; };
+		F9366AE7285A63B8004C972B /* BrightFutures in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AE6285A63B8004C972B /* BrightFutures */; };
+		F9366AEA285A63D5004C972B /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AE9285A63D5004C972B /* SwiftProtobuf */; };
+		F9366AEC285A63D5004C972B /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AEB285A63D5004C972B /* SwiftProtobufPluginLibrary */; };
+		F9366AEF285A63E5004C972B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AEE285A63E5004C972B /* Algorithms */; };
 		F9EC56622859C2C4004DA316 /* AzureTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56522859C2C4004DA316 /* AzureTestProjectApp.swift */; };
 		F9EC56632859C2C4004DA316 /* AzureTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56522859C2C4004DA316 /* AzureTestProjectApp.swift */; };
 		F9EC56642859C2C4004DA316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56532859C2C4004DA316 /* ContentView.swift */; };
@@ -47,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9EC56722859C306004DA316 /* SnapKit in Frameworks */,
+				F9366AE7285A63B8004C972B /* BrightFutures in Frameworks */,
 				F9366AC8285A616F004C972B /* AppCenterAnalytics in Frameworks */,
 				F9366ACC285A616F004C972B /* AppCenterDistribute in Frameworks */,
 				F9366ABF285A60F9004C972B /* AlamofireImage in Frameworks */,
@@ -57,7 +62,10 @@
 				F9EC56782859C39A004DA316 /* TwilioVideo in Frameworks */,
 				F9366ADB285A62C4004C972B /* KVKSocket in Frameworks */,
 				F9366ACF285A61E9004C972B /* Gallery in Frameworks */,
+				F9366AEC285A63D5004C972B /* SwiftProtobufPluginLibrary in Frameworks */,
+				F9366AEA285A63D5004C972B /* SwiftProtobuf in Frameworks */,
 				F9366AD2285A6239004C972B /* Kingfisher in Frameworks */,
+				F9366AEF285A63E5004C972B /* Algorithms in Frameworks */,
 				F9EC56752859C342004DA316 /* Alamofire in Frameworks */,
 				F9366ADE285A6301004C972B /* LGSideMenuController in Frameworks */,
 				F9366AE1285A633B004C972B /* AnyDate in Frameworks */,
@@ -146,6 +154,10 @@
 				F9366ADD285A6301004C972B /* LGSideMenuController */,
 				F9366AE0285A633B004C972B /* AnyDate */,
 				F9366AE3285A6359004C972B /* DeviceKit */,
+				F9366AE6285A63B8004C972B /* BrightFutures */,
+				F9366AE9285A63D5004C972B /* SwiftProtobuf */,
+				F9366AEB285A63D5004C972B /* SwiftProtobufPluginLibrary */,
+				F9366AEE285A63E5004C972B /* Algorithms */,
 			);
 			productName = "AzureTestProject (iOS)";
 			productReference = F9EC56592859C2C4004DA316 /* AzureTestProject.app */;
@@ -211,6 +223,9 @@
 				F9366ADC285A6301004C972B /* XCRemoteSwiftPackageReference "LGSideMenuController" */,
 				F9366ADF285A633B004C972B /* XCRemoteSwiftPackageReference "AnyDate" */,
 				F9366AE2285A6359004C972B /* XCRemoteSwiftPackageReference "DeviceKit" */,
+				F9366AE5285A63B8004C972B /* XCRemoteSwiftPackageReference "BrightFutures" */,
+				F9366AE8285A63D4004C972B /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				F9366AED285A63E5004C972B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = F9EC565A2859C2C4004DA316 /* Products */;
 			projectDirPath = "";
@@ -618,6 +633,30 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		F9366AE5285A63B8004C972B /* XCRemoteSwiftPackageReference "BrightFutures" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Thomvis/BrightFutures";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		F9366AE8285A63D4004C972B /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F9366AED285A63E5004C972B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		F9EC56702859C306004DA316 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -714,6 +753,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F9366AE2285A6359004C972B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F9366AE6285A63B8004C972B /* BrightFutures */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9366AE5285A63B8004C972B /* XCRemoteSwiftPackageReference "BrightFutures" */;
+			productName = BrightFutures;
+		};
+		F9366AE9285A63D5004C972B /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9366AE8285A63D4004C972B /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		F9366AEB285A63D5004C972B /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9366AE8285A63D4004C972B /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		F9366AEE285A63E5004C972B /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9366AED285A63E5004C972B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
 		};
 		F9EC56712859C306004DA316 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
