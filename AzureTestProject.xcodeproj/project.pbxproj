@@ -16,7 +16,7 @@
 		F9EC56722859C306004DA316 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9EC56712859C306004DA316 /* SnapKit */; };
 		F9EC56752859C342004DA316 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F9EC56742859C342004DA316 /* Alamofire */; };
 		F9EC56782859C39A004DA316 /* TwilioVideo in Frameworks */ = {isa = PBXBuildFile; productRef = F9EC56772859C39A004DA316 /* TwilioVideo */; };
-		F9EC567E2859EB83004DA316 /* PracticeAppServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9EC567D2859EB83004DA316 /* PracticeAppServices */; };
+		F9EC56842859ED43004DA316 /* SecureMessagingServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9EC56832859ED43004DA316 /* SecureMessagingServices */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +33,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EC56842859ED43004DA316 /* SecureMessagingServices in Frameworks */,
 				F9EC56722859C306004DA316 /* SnapKit in Frameworks */,
 				F9EC56782859C39A004DA316 /* TwilioVideo in Frameworks */,
 				F9EC56752859C342004DA316 /* Alamofire in Frameworks */,
-				F9EC567E2859EB83004DA316 /* PracticeAppServices in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 				F9EC56712859C306004DA316 /* SnapKit */,
 				F9EC56742859C342004DA316 /* Alamofire */,
 				F9EC56772859C39A004DA316 /* TwilioVideo */,
-				F9EC567D2859EB83004DA316 /* PracticeAppServices */,
+				F9EC56832859ED43004DA316 /* SecureMessagingServices */,
 			);
 			productName = "AzureTestProject (iOS)";
 			productReference = F9EC56592859C2C4004DA316 /* AzureTestProject.app */;
@@ -160,7 +160,7 @@
 				F9EC56702859C306004DA316 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F9EC56732859C342004DA316 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F9EC56762859C39A004DA316 /* XCRemoteSwiftPackageReference "twilio-video-ios" */,
-				F9EC567C2859EB83004DA316 /* XCRemoteSwiftPackageReference "PracticeAppServices" */,
+				F9EC56822859ED43004DA316 /* XCRemoteSwiftPackageReference "SecureMessagingServices" */,
 			);
 			productRefGroup = F9EC565A2859C2C4004DA316 /* Products */;
 			projectDirPath = "";
@@ -496,9 +496,9 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		F9EC567C2859EB83004DA316 /* XCRemoteSwiftPackageReference "PracticeAppServices" */ = {
+		F9EC56822859ED43004DA316 /* XCRemoteSwiftPackageReference "SecureMessagingServices" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SymplastLLC/PracticeAppServices";
+			repositoryURL = "https://kvyatkovskys:23c05abceb9bad56f8daeff797e94fe09cb5e8d0@github.com/SymplastLLC/SecureMessagingServices";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -522,10 +522,10 @@
 			package = F9EC56762859C39A004DA316 /* XCRemoteSwiftPackageReference "twilio-video-ios" */;
 			productName = TwilioVideo;
 		};
-		F9EC567D2859EB83004DA316 /* PracticeAppServices */ = {
+		F9EC56832859ED43004DA316 /* SecureMessagingServices */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9EC567C2859EB83004DA316 /* XCRemoteSwiftPackageReference "PracticeAppServices" */;
-			productName = PracticeAppServices;
+			package = F9EC56822859ED43004DA316 /* XCRemoteSwiftPackageReference "SecureMessagingServices" */;
+			productName = SecureMessagingServices;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
