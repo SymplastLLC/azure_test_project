@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F9AEA29E285A063700464EC9 /* ProvidersServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9AEA29D285A063700464EC9 /* ProvidersServices */; };
-		F9AEA2A1285A064F00464EC9 /* AppointmentRequestsServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9AEA2A0285A064F00464EC9 /* AppointmentRequestsServices */; };
-		F9AEA2A4285A066800464EC9 /* FinancialServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9AEA2A3285A066800464EC9 /* FinancialServices */; };
-		F9AEA2A7285A067700464EC9 /* SymplastServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9AEA2A6285A067700464EC9 /* SymplastServices */; };
+		F9A611AA285A09FD00966DFF /* ProvidersServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9A611A9285A09FD00966DFF /* ProvidersServices */; };
+		F9A611AD285A0A2900966DFF /* AppointmentRequestsServices in Frameworks */ = {isa = PBXBuildFile; productRef = F9A611AC285A0A2900966DFF /* AppointmentRequestsServices */; };
 		F9EC56622859C2C4004DA316 /* AzureTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56522859C2C4004DA316 /* AzureTestProjectApp.swift */; };
 		F9EC56632859C2C4004DA316 /* AzureTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56522859C2C4004DA316 /* AzureTestProjectApp.swift */; };
 		F9EC56642859C2C4004DA316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56532859C2C4004DA316 /* ContentView.swift */; };
@@ -36,13 +34,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9AEA2A1285A064F00464EC9 /* AppointmentRequestsServices in Frameworks */,
+				F9A611AD285A0A2900966DFF /* AppointmentRequestsServices in Frameworks */,
 				F9EC56722859C306004DA316 /* SnapKit in Frameworks */,
 				F9EC56782859C39A004DA316 /* TwilioVideo in Frameworks */,
 				F9EC56752859C342004DA316 /* Alamofire in Frameworks */,
-				F9AEA2A7285A067700464EC9 /* SymplastServices in Frameworks */,
-				F9AEA2A4285A066800464EC9 /* FinancialServices in Frameworks */,
-				F9AEA29E285A063700464EC9 /* ProvidersServices in Frameworks */,
+				F9A611AA285A09FD00966DFF /* ProvidersServices in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +108,8 @@
 				F9EC56712859C306004DA316 /* SnapKit */,
 				F9EC56742859C342004DA316 /* Alamofire */,
 				F9EC56772859C39A004DA316 /* TwilioVideo */,
-				F9AEA29D285A063700464EC9 /* ProvidersServices */,
-				F9AEA2A0285A064F00464EC9 /* AppointmentRequestsServices */,
-				F9AEA2A3285A066800464EC9 /* FinancialServices */,
-				F9AEA2A6285A067700464EC9 /* SymplastServices */,
+				F9A611A9285A09FD00966DFF /* ProvidersServices */,
+				F9A611AC285A0A2900966DFF /* AppointmentRequestsServices */,
 			);
 			productName = "AzureTestProject (iOS)";
 			productReference = F9EC56592859C2C4004DA316 /* AzureTestProject.app */;
@@ -169,11 +163,8 @@
 				F9EC56702859C306004DA316 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F9EC56732859C342004DA316 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F9EC56762859C39A004DA316 /* XCRemoteSwiftPackageReference "twilio-video-ios" */,
-				F9EC56C5285A0208004DA316 /* XCRemoteSwiftPackageReference "MultimediaServices" */,
-				F9AEA29C285A063700464EC9 /* XCRemoteSwiftPackageReference "ProviderServices" */,
-				F9AEA29F285A064F00464EC9 /* XCRemoteSwiftPackageReference "AppointmentRequestsServices" */,
-				F9AEA2A2285A066800464EC9 /* XCRemoteSwiftPackageReference "FinancialServices" */,
-				F9AEA2A5285A067700464EC9 /* XCRemoteSwiftPackageReference "SymplastServices" */,
+				F9A611A8285A09FD00966DFF /* XCRemoteSwiftPackageReference "ProviderServices" */,
+				F9A611AB285A0A2900966DFF /* XCRemoteSwiftPackageReference "AppointmentRequestsServices" */,
 			);
 			productRefGroup = F9EC565A2859C2C4004DA316 /* Products */;
 			projectDirPath = "";
@@ -485,33 +476,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F9AEA29C285A063700464EC9 /* XCRemoteSwiftPackageReference "ProviderServices" */ = {
+		F9A611A8285A09FD00966DFF /* XCRemoteSwiftPackageReference "ProviderServices" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/ProviderServices";
+			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/ProviderServices";
 			requirement = {
 				branch = main;
 				kind = branch;
 			};
 		};
-		F9AEA29F285A064F00464EC9 /* XCRemoteSwiftPackageReference "AppointmentRequestsServices" */ = {
+		F9A611AB285A0A2900966DFF /* XCRemoteSwiftPackageReference "AppointmentRequestsServices" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/AppointmentRequestsServices";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		F9AEA2A2285A066800464EC9 /* XCRemoteSwiftPackageReference "FinancialServices" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/FinancialServices";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		F9AEA2A5285A067700464EC9 /* XCRemoteSwiftPackageReference "SymplastServices" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/SymplastServices";
+			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/AppointmentRequestsServices";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -541,36 +516,18 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		F9EC56C5285A0208004DA316 /* XCRemoteSwiftPackageReference "MultimediaServices" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://kvyatkovskys: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@github.com/SymplastLLC/MultimediaServices";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F9AEA29D285A063700464EC9 /* ProvidersServices */ = {
+		F9A611A9285A09FD00966DFF /* ProvidersServices */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9AEA29C285A063700464EC9 /* XCRemoteSwiftPackageReference "ProviderServices" */;
+			package = F9A611A8285A09FD00966DFF /* XCRemoteSwiftPackageReference "ProviderServices" */;
 			productName = ProvidersServices;
 		};
-		F9AEA2A0285A064F00464EC9 /* AppointmentRequestsServices */ = {
+		F9A611AC285A0A2900966DFF /* AppointmentRequestsServices */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9AEA29F285A064F00464EC9 /* XCRemoteSwiftPackageReference "AppointmentRequestsServices" */;
+			package = F9A611AB285A0A2900966DFF /* XCRemoteSwiftPackageReference "AppointmentRequestsServices" */;
 			productName = AppointmentRequestsServices;
-		};
-		F9AEA2A3285A066800464EC9 /* FinancialServices */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F9AEA2A2285A066800464EC9 /* XCRemoteSwiftPackageReference "FinancialServices" */;
-			productName = FinancialServices;
-		};
-		F9AEA2A6285A067700464EC9 /* SymplastServices */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F9AEA2A5285A067700464EC9 /* XCRemoteSwiftPackageReference "SymplastServices" */;
-			productName = SymplastServices;
 		};
 		F9EC56712859C306004DA316 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
