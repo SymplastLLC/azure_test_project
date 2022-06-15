@@ -25,6 +25,8 @@
 		F9366AEA285A63D5004C972B /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AE9285A63D5004C972B /* SwiftProtobuf */; };
 		F9366AEC285A63D5004C972B /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AEB285A63D5004C972B /* SwiftProtobufPluginLibrary */; };
 		F9366AEF285A63E5004C972B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AEE285A63E5004C972B /* Algorithms */; };
+		F9366AFB285A662F004C972B /* FontBlaster in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AFA285A662F004C972B /* FontBlaster */; };
+		F9366AFE285A6677004C972B /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = F9366AFD285A6677004C972B /* SwiftUIFontIcon */; };
 		F9EC56622859C2C4004DA316 /* AzureTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56522859C2C4004DA316 /* AzureTestProjectApp.swift */; };
 		F9EC56632859C2C4004DA316 /* AzureTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56522859C2C4004DA316 /* AzureTestProjectApp.swift */; };
 		F9EC56642859C2C4004DA316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC56532859C2C4004DA316 /* ContentView.swift */; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9366AFE285A6677004C972B /* SwiftUIFontIcon in Frameworks */,
 				F9EC56722859C306004DA316 /* SnapKit in Frameworks */,
 				F9366AE7285A63B8004C972B /* BrightFutures in Frameworks */,
 				F9366AC8285A616F004C972B /* AppCenterAnalytics in Frameworks */,
@@ -69,6 +72,7 @@
 				F9EC56752859C342004DA316 /* Alamofire in Frameworks */,
 				F9366ADE285A6301004C972B /* LGSideMenuController in Frameworks */,
 				F9366AE1285A633B004C972B /* AnyDate in Frameworks */,
+				F9366AFB285A662F004C972B /* FontBlaster in Frameworks */,
 				F9366AC5285A6122004C972B /* AlamofireImage in Frameworks */,
 				F9366AD8285A6283004C972B /* KVKToast in Frameworks */,
 			);
@@ -158,6 +162,8 @@
 				F9366AE9285A63D5004C972B /* SwiftProtobuf */,
 				F9366AEB285A63D5004C972B /* SwiftProtobufPluginLibrary */,
 				F9366AEE285A63E5004C972B /* Algorithms */,
+				F9366AFA285A662F004C972B /* FontBlaster */,
+				F9366AFD285A6677004C972B /* SwiftUIFontIcon */,
 			);
 			productName = "AzureTestProject (iOS)";
 			productReference = F9EC56592859C2C4004DA316 /* AzureTestProject.app */;
@@ -226,6 +232,8 @@
 				F9366AE5285A63B8004C972B /* XCRemoteSwiftPackageReference "BrightFutures" */,
 				F9366AE8285A63D4004C972B /* XCRemoteSwiftPackageReference "swift-protobuf" */,
 				F9366AED285A63E5004C972B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				F9366AF9285A662F004C972B /* XCRemoteSwiftPackageReference "FontBlaster" */,
+				F9366AFC285A6677004C972B /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 			);
 			productRefGroup = F9EC565A2859C2C4004DA316 /* Products */;
 			projectDirPath = "";
@@ -392,9 +400,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P44LMMDHV3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -410,6 +418,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SK.AzureTestProject;
 				PRODUCT_NAME = AzureTestProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,9 +431,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P44LMMDHV3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,6 +449,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SK.AzureTestProject;
 				PRODUCT_NAME = AzureTestProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -657,6 +667,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F9366AF9285A662F004C972B /* XCRemoteSwiftPackageReference "FontBlaster" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ArtSabintsev/FontBlaster";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F9366AFC285A6677004C972B /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		F9EC56702859C306004DA316 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -773,6 +799,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F9366AED285A63E5004C972B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
+		};
+		F9366AFA285A662F004C972B /* FontBlaster */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9366AF9285A662F004C972B /* XCRemoteSwiftPackageReference "FontBlaster" */;
+			productName = FontBlaster;
+		};
+		F9366AFD285A6677004C972B /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9366AFC285A6677004C972B /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
 		};
 		F9EC56712859C306004DA316 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
