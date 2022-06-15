@@ -1,0 +1,109 @@
+default_platform :ios
+
+APPLE_ISSUER_ID = ENV["APPLE_ISSUER_ID"]
+APPLE_KEY_ID = ENV["APPLE_KEY_ID"]
+APPLE_KEY_CONTENT = ENV["APPLE_KEY_CONTENT"]
+IS_KEY_ENCODED = ENV["IS_KEY_ENCODED"]
+GIT_AUTHORIZATION = ENV["GIT_AUTHORIZATION"]
+MATCH_TYPE = ENV["MATCH_TYPE"]
+SCHEME = ENV["SCHEME"]
+CONFIGURATION = ENV["CONFIGURATION"]
+EXPORT_METOD = ENV["EXPORT_METOD"]
+EXPORT_OPTION = ENV["EXPORT_OPTION"]
+TEMP_KEYCHAIN_USER = "azure.keychain"
+TEMP_KEYCHAIN_PASSWORD = "qwerty1234"
+BUNDLE_ID = ENV["BUNDLE_ID"]
+DO_NOT_UPDATE_CERTIFICATES = ENV["DO_NOT_UPDATE_CERTIFICATES"]
+FORCE_UPDATE_PROFILES = ENV["FORCE_UPDATE_PROFILES"]
+RUN_TESTS = ENV["RUN_TESTS"]
+
+platform :ios do
+
+  before_all do |lane|
+
+    #clear_derived_data
+    #clean_build_artifacts
+
+  end
+
+  private_lane :delete_temp_keychain do 
+
+    delete_keychain(name: TEMP_KEYCHAIN_USER) if File.exist? File.expand_path("~/Library/Keychains/#{TEMP_KEYCHAIN_USER}-db")
+
+  end
+
+  private_lane :create_temp_keychain do 
+
+    create_keychain(name: TEMP_KEYCHAIN_USER,
+                    password: TEMP_KEYCHAIN_PASSWORD,
+                    unlock: false,
+                    timeout: 0
+    )
+
+  end
+
+  private_lane :ensure_temp_keychain do 
+
+    delete_temp_keychain
+    create_temp_keychain
+
+  end
+
+  private_lane :match_sign do
+
+    ensure_temp_keychain
+
+    api_key = app_store_connect_api_key(key_id: APPLE_KEY_ID,
+                                        issuer_id: APPLE_ISSUER_ID,
+                                        key_content: APPLE_KEY_CONTENT,
+                                        is_key_content_base64: IS_KEY_ENCODED,
+                                        duration: 1200,            
+                                        in_house: false,
+              )
+
+    match(type: MATCH_TYPE,
+          git_basic_authorization: Base64.strict_encode64(GIT_AUTHORIZATION),
+          readonly: DO_NOT_UPDATE_CERTIFICATES,
+          api_key: api_key,
+          keychain_name: TEMP_KEYCHAIN_USER,
+          keychain_password: TEMP_KEYCHAIN_PASSWORD,
+          force: FORCE_UPDATE_PROFILES,
+    )
+
+  end
+
+  desc "Runs all the tests"
+  lane :run_scan do
+    scan(scheme: SCHEME,
+        devices: ["iPhone 13"],
+    )
+  end
+
+  desc "Creates a build"
+  lane :build do
+
+    if RUN_TESTS == 'true'
+      run_scan
+    else
+      #match_sign
+
+      gym(scheme: 'AzureTestProject-DEV',
+          #cloned_source_packages_path: '',
+          #disable_package_automatic_updates: true,
+          #skip_package_dependencies_resolution: true
+          configuration: 'Debug',
+        # export_method: EXPORT_METOD,
+        # export_options: {
+        #   signingStyle: "manual",
+        #   provisioningProfiles: {
+        #     BUNDLE_ID => "match #{EXPORT_OPTION} #{BUNDLE_ID}",
+        #   }
+        # } 
+      )
+
+      #delete_temp_keychain
+    end
+
+  end
+
+end
